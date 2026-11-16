@@ -1,0 +1,22 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tekin Holding</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#14161c;color:#eee;font:15px system-ui,sans-serif;display:flex;flex-direction:column;height:100vh}
+header{padding:10px 16px;font-weight:700;letter-spacing:.5px;background:#1d2029;border-bottom:1px solid #2c3040}
+main{flex:1;display:flex;min-height:0}
+#wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:12px;min-width:0}
+canvas{width:100%;max-width:960px;image-rendering:pixelated;border-radius:8px;cursor:pointer;background:#222}
+#panel{width:340px;display:none;flex-direction:column;background:#1d2029;border-left:1px solid #2c3040}
+#panel.on{display:flex}#ph{padding:10px 14px;font-weight:700;border-bottom:1px solid #2c3040;display:flex;justify-content:space-between}
+#log{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:8px}
+.m{padding:8px 11px;border-radius:12px;max-width:88%;white-space:pre-wrap;line-height:1.4}.k{align-self:flex-end;background:#3b5bdb}.a{align-self:flex-start;background:#2c3040}
+form{display:flex;gap:6px;padding:10px;border-top:1px solid #2c3040}input{flex:1;padding:10px;border-radius:8px;border:0;background:#2c3040;color:#fff}button{border:0;border-radius:8px;background:#3b5bdb;color:#fff;padding:0 14px}
+small{color:#8b90a0;padding:0 12px 8px}
+@media(max-width:700px){#panel{position:fixed;inset:auto 0 0 0;width:auto;height:60vh}}
+</style></head><body>
+<header>🏢 Tekin Holding — ofis</header>
+<main><div id="wrap"><canvas id="c" width="320" height="180"></canvas></div>
+<aside id="panel"><div id="ph"><span id="pn"></span><span id="x" style="cursor:pointer">✕</span></div><div id="log"></div>
+<small>“!” ile başlayan mesaj kalıcı yönerge olarak hafızaya yazılır.</small>
+<form id="f"><input id="i" placeholder="Mesaj yaz…" autocomplete="off"><button>Gönder</button></form></aside></main>
+<script src="office.js"></script></body></html>
